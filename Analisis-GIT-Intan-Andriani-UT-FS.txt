@@ -1,0 +1,57 @@
+Analisis GIT Berdasarkan Fungsi Push Source Code Github
+
+Oleh: Intan Andriani
+
+    Version Control System atau VCS merupakan sistem yang digunakan untuk merekam semua perubahan sumber kode
+kita. Sedangkan Source Code Management atau SCM adalah praktek pengelolaan sumber kode dalam sebuah perangkat
+lunak. Keduanya memiliki peran yang penting bagi programmer dalam pengembangan perangkat lunak. VCS dan SCM 
+ini membantu programmer untuk merekam semua perubahan sumber kode, kerja tim menjadi lebih efektif, hingga 
+berguna untuk memastikan kualitas serta stabilitas aplikasi yang sedang dikembangkan.
+
+    SCM yang biasa dan populer digunakan di kalangan programmer adalah Git, Github, dan Gitlab. Git atau Group
+Inclusive Tour adalah Version Contron System gratis dan open source, yang dirancang guna menangani segala project
+dan dapat melacak segala perubahan pada source code. Dengan Git, pengembang dapat bekerja bersama dalam suatu
+proyek. Git memiliki 2 sistem, Centralized dan Distributed. Data proyek akan disimpan hanya di dalam satu server. 
+Sedangkan Distributed dapat menyimpan data proyek pada lokal serta server. Sehingga, bila ditinjau dari risiko
+seperti server corrupt, distributed akan lebih aman untuk digunakan. 
+
+    Git memiliki sejumlah fitur di antaranya, version control, git branch, merging, staging area, Git 
+rebase, hooks, dan GUI tools. 
+1. Version Control  : Memungkinkan pengembang untuk menyimpan dan mengelola code version yang berbeda akibat 
+                      perubahan.
+2. Git Branch       : Berguna terutama ketika pengembang menambah fitur baru atau memperbaiki bug sehingga 
+                      tidak mengganggu source code utama.
+3. Merging: Merging pada Git memungkinkan pengguna untuk melakukan penggabungan antar branch.
+4. Staging area: Yaitu pengembang dapat memilih perubahan kode mana yang akan di-commit.
+5. Git Rebase: Berguna untuk menggabungkan atau menggeser commit base.
+6. Hooks: Yaitu script yang otomatis berjalan ketika terjadi suatu peristiwa dalam Git.
+7. GUI Tools: Berguna dalam memudahkan pengguna yang tidak terbiasa dengan command line, untuk menggunakan Git.
+
+    Git memiliki kelebihan dan kelemahan. Kelebihannya adalah dapat mengelola kode dengan mudah dan efisien, 
+aman melakukan brancing dan merging, mampu melacak perubahan dan siapa yang membuatnya, performa cepat dan 
+stabil. Sedangkan kelemahannya adalah fiturnya kompleks, diperlukan pemahaman yang baik, sulit digunakan untuk
+mengelola file biner atau non-teks.
+
+    Untuk menggunakan Git, dapat dimulai dengan menginstal Git pada halaman download Git sesuai versi yang 
+sesuai dengan sistem operasi yang digunakan. Kemudian pengguna dapat memverifikasi instalasi Git dengan perintah
+git --version pada command prompt Windows. Selanjutnya, pengguna dapat melakukan konfigurasi Git dengan perintah 
+git config --global user.name "UserName" dan git config  --global user.email email@anda. Selanjutnya pengguna
+dapat memasukkan perintah git config --list.
+
+    Penggunaan Git kemudian dapat dihubungkan dengan Github. Github adalah salah satu layanan hosting git
+repository. Git dan Github memiliki kaitan yang erat karena Git memiliki peran sebagai VCS. Sedangkan Github
+berperan sebagai host atau tempat penyimpanan kode program. Setelah melakukan kofigurasi Git, pengguna dapat
+sign in pada Github. Kemudian membuat repository baru pada Github. Selanjutnya, buat folder pada lokal disk komputer
+sebagai tempat menyimpan update file repository. Buka gitbash pada folder, ubah folder menjadi repository dengan 
+perintah $git init, tambah file ke repository dengan $git add nama.jenisfile. Lakukan commit dengan $git commit
+-m "first commit". Selanjutnya lakukan remote pada repository dengan perintah $git remote add origin 
+https://github.com/usernamegit/reponame.git. Lakukan push ke github untuk mengupload source code ke Github dengan
+$git push -u origin master. Akhirnya repository telah dibuat pada github beserta file yang diupload
+sebelumnya.
+
+    Kesimpulannya adalah Git merupakan layanan version control system yang berguna untuk mengelola sumber kode beserta
+perubahannya. Sedangkan Github adalah salah satu layanan hosting git repository, berguna sebagai tempat penyimpanan
+kode program. Git dan Github merupakan sistem yang saling berkaitan. Masing-masing memiliki fungsi yang berbeda namun
+berhubungan antar satu sama lain. Dengan pemahaman yang baik, pengguna dapat mengelola sumber kode secara bersamaan
+dengan pengguna lain di satu proyek yang sama secara efisien dan aman.
+
